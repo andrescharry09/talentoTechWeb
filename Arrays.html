@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+
+<script>
+//agregarle un elemento al array ejm. (0, 1, 2)
+//                   0         1          2          3
+ var estudiantes = ["Luis" , "Roberto", "Maria" , "Camila"]
+ var notas = [3.5 , 4.2 , 2.8]
+ var frutas = ["Manzana" , "Pera" , "Banano"]
+ document.write(estudiantes[2])
+ document.write("<br>") 
+ document.write("la longitud del array es:" + estudiantes.length) //  al llamar la variable
+ // (estudiantes con length) nos muestra cuantos elementos hay
+
+
+ // Eliminar un elemento del array
+
+clientes.pop() //elimino el ultimo elemento
+
+//(indice,cantidad)
+clientes.splice(0,1) //elimino un elemento en una posicion especifica
+document.write(clientes)
+document.write("<br>")
+
+
+//ordenar un array
+
+clientes.sort() //ordena
+clientes.reverse () //ordena al reves
+document.write(clientes)
+
+// ejercicio 2 
+//implementar 4 arrays
+//uno de paises 
+//uno de ciudades
+//uno de departamentos
+//uno de universidades
+//mostrar la longitud de cada uno e imprimir sus elementos
+
+var paises = ["Italia" , "Francia", "Alemania" , "Colombia"] //array implementado
+document.write("Los elementos del array son: " + paises)  //imprime sus elementos
+document.write("la longitud del array es:" + paises.length + "<br>") //mostrar la longitud
+
+var ciudades = ["Ibague" , "Armenia" , "Pereira" , "Manizales"] //array implementado
+document.write("Los elementos del array son: " + ciudades) //imprime sus elementos
+document.write("la longitud del array es:" + ciudades.length + "<br>") //mostrar la longitud
+
+
+var departamentos = ["Tecnologia" , "Juridica" , "Produccion" , "Contabilidad"] //array implementado
+document.write("Los elementos del array son: " + departamentos) //imprime sus elementos
+document.write("la longitud del array es:" + departamentos.length + "<br>") //mostrar la longitud
+
+
+var universidades = ["Javerina" , "Rosario" , "Andes", "Catolica"] //array implementado
+document.write("Los elementos del array son: " + universidades) //imprime sus elementos
+document.write("la longitud del array es:" + universidades.length + "<br>") //mostrar la longitud
+
+// ejercicio 3
+//crear un array con 5 notas y obtener el producto
+
+// indice     0      1    2    3     4
+var notas  = [3.5 , 2.1 , 5 , 4.2 , 4.8]
+var acumulado = 0
+for(var i = 0; i<notas.length; i++){ 
+    acumulado = acumulado + notas[i] //acumulado de notas
+}
+var promedio = acumulado/notas.length
+document.write("El promedio es: " + promedio)
+
+
+//Ejercicio 4
+// Implementar un array que me permita ingresar 5 personas, agregarlas a un array
+//de invitados e imprimir sus nombres y la cantidad total
+
+var nombre
+var CantidadInvitados = parseInt(prompt("Ingrese la cantidad de personas a invitar"))
+var invitados = []
+for(var i= 0; i<CantidadInvitados; i++){ // Se repite la cantidad de veces que yo eliga cuando me pregunta "ingrese la cantidad de personas a invitar"
+    nombre = prompt("Ingresar el nombre del invitado")
+    invitados.push(nombre)
+}
+document.write("Los invitados son: " + invitados + "<br>")
+document.write("La cantidad de invitados es: " + invitados.length)
+
+//Ejercicio 4
+//Hacer un algoritmo que almacene en una matriz, las notas por periodo y la recorra
+//saque los promedios por periodo y la nota final
+
+var matriz = [
+    [4.1 , 2 ,3 , 5],
+    [2.8 , 1 , 3.1 , 2.9],
+    [2.4 , 1.3 , 4.2 , 0.5],
+    [4.7 , 5, 3.6 , 2.3]
+
+]
+
+var notaPeriodo = 0
+var acumulado = 0
+
+for(var i = 0; i<matriz.length; i++){
+    document.write(matriz[i] + "<br>")
+
+    for(var j = 0; j<matriz[i].length; j++){
+     notaPeriodo = notaPeriodo+matriz[i][j] //acumulamos las notas del periodo
+    }
+    notaPeriodo=notaPeriodo/matriz[i].length //sacamos promedio periodo
+    document.write("La nota del periodo " + "es" + notaPeriodo + "<br>")
+    acumulado=acumulado+notaPeriodo //Acumulamos las notas finales
+    notaPeriodo = 0
+
+}
+    document.write("La nota final es: " + acumulado/matriz.length) //sacamos el promedio
+
+// ejercicio 1 tutoria
+//algoritmo que imprima los elementos de un array, cada uno en una linea independiente
+
+var equipos = ["Nacional, America, Once Caldas, Millonarios"]
+for(var i = 0; i<equipos.length; i++){
+    document.write(equipos [i] + "<br>")
+}
+
+
+//ejercicio 2 tutoria
+//Sumar todos los elementos de un array
+
+var ventas = [115, 224, 1500, 800, 3241]
+var total = 0
+for(var i = 0; i<ventas.length; i++){
+    total+=ventas[i]
+}
+document.write("El total de las ventas es: " + total)
+
+//ejercicio 3 tutoria
+//encontrar el valor maximo de un array
+
+var notas = [3.1 ,  3.3 , 4, 1.2]
+var notaMaxima=notas [0]
+for(var i = 0; i<notas.length; i++){
+    if(notas[i] >notaMaxima){
+        notaMaxima = notas[i]
+    }
+}
+document.write("La nota maxima es " + notaMaxima)
+
+
+//ejercicio 4 tutoria
+//teniendo una array de numeros, imprimir solamente los que sean multiplos de 4
+
+var numeros = [2, 3, 16, 24, 36, 48, 62, 80, 100]
+for(var i = 0; i<numeros.length; i++){
+    if(numeros[i]%4 == 0){ // Operador modulo => Residuo
+        document.write("El numero " + numeros[i] + " es multiplo de 4 <br>")
+}
+}
+
+</script>
+
+
+
+
+
+
+</html>

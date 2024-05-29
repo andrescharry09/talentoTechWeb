@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="background-color: aqua;"> 
+        <!-- Encabezado -->
+        <tr style="background-color: darkgray;">
+            <th>Nombre</th>
+            <th>Correo</th>
+            <th>Ciudad</th>
+            <th>Edad</th>
+            <th>Profesion</th>
+            <th>Fecha de nacimiento</th>
+        </tr>
+        <!-- Datos -->
+        <tr style=>
+            <td>Mario Sanchez</td>
+            <td>mario@correo.com</td>
+            <td>Manizales</td>
+            <td>31</td>
+            <td>Ingeniero de Sistemas</td>
+            <td>04-10-1992</td>
+        </tr>
+        <tr>
+            <td>Juan Perez</td>
+            <td>juan@correo.com</td>
+            <td>Bogota</td>
+            <td>28</td>
+            <td>Tecnologo en recursos humanos</td>
+        </tr>
+        <tr>
+            <td>Lorena Rodriguez</td>
+            <td>lorena@correo.com</td>
+            <td>Cali</td>
+            <td>35</td>
+            <td>Esteticista</td>
+        </tr>
+        <tr>
+            <td>Marcela Morales</td>
+            <td>marcela@correo.com</td>
+            <td>Cartagena</td>
+            <td>23</td>
+            <td>Ingeniera Electrica</td>
+        </tr>
+    </table>
+    <hr>
+
+<!--Formulario-->
+<form method="post"> 
+<!--Campo de texto-->
+<label for="">Nombre</label>
+<input type="text"placeholder="Escriba el Nombre" required name="Nombre">
+<!--Salto de linea-->
+<br>
+<!--Campo Fecha-->
+<label for="">Fecha de Nacimiento</label>
+<input type="date" required max="2024-05-02"min="1900-01-01" value="2024-05-02" name="Fecha_Nacimiento">
+<br>
+<!--Campo Numerico-->
+<label for="">Ingresos Mensuales</label>
+<input type="number" required placeholder="Salario Mensual" name="Salario">
+<br>
+<!--Campo Email-->
+<label for="">Correo Electronico</label>
+<input type="Email" required placeholder="Ingresar Email" name="Email">
+<br>
+<!--Campo Archivo-->
+<label for="">Subir HV</label>
+<input type="File" required placeholder="Subir Archivo" accept="Imagen/" name="HV">
+
+<!--Campo Password-->
+<label for="">Password</label>
+<input type="Password" required name="Password" >
+<br>
+<!--Campo Hora-->
+<label for="">Hora de Ingreso</label>
+<input type="Time" required name="Hora_Ingreso">
+<br>
+<!--Campo Mes-->
+<label for="">Mes de ingreso a la Empresa</label>
+<input type="Month" required name=" Ingreso_Empresa">
+<br>
+<!--Campo Color-->
+<label for="">Color del Uniforme</label>
+<input type="Color" required name="Color_Uniforme">
+<br>
+<!--Campo Radio-->
+<label for="">Genero</label>
+<input type="Radio" name="Genero" value="Femenino" required>
+<label for="">Femenino</label>
+<input type="Radio" name="Genero" value="Masculino" required>
+<label for="">Masculino</label>
+<br>
+<!--Campó Checkbox-->
+<label for="">Dias Laborados</label>
+<input type="Checkbox" name="Dias"  value="Lunes">
+<label for="">Lunes</label>
+<input type="Checkbox" name="Dias"  value="Martes">
+<label for="">Martes</label>
+<input type="Checkbox" name="Dias"  value="Miercoles">
+<label for="">Miercoles</label>
+<input type="Checkbox" name="Dias"  value="Jueves">
+<label for="">Jueves</label>
+<input type="Checkbox" name="Dias"  value="Viernes">
+<label for="">Viernes</label>
+<br>
+<!--Campo URL-->
+<label for="">Link del Perfil Linkiden</label>
+<input type="url" required name="Link_Perfil">
+<br>
+<!--Campo del Telefono-->
+<label for="">Telefono</label>
+<input type="Tel" required name="Telefono">
+ <br>
+<!-- Selector -->
+<label for="">Escoja una ciudad</label>
+<select name="" id="">
+    <option value="">-</option>
+    <option value="Manizales">Manizales</option>
+    <option value="Bogota">Bogota</option>
+    <option value="Cali">Cali</option>
+    <option value="Cartagena">Cartagena</option>
+</select>
+ <br>
+ <!--Fielset-->
+
+ <fieldset>
+    <legend>Informacion General</legend>
+    <!---Text Area-->
+<label for="">Descripcion del Perfil</label>
+<textarea name="" id=""></textarea>
+<br>
+<!--Data List-->
+<label for="">Tipo de Documento</label>
+<input list="Documento" name="Documento">
+<datalist id="Documento">
+ <option value="Cedula">Cedula</option>
+ <option value="Tarjeta de Identidad">Tarjeta de Identidad</option>
+ <option value="Pasaporte">Pasaporte</option>
+</datalist>
+<br>
+
+<label for="">Cedula</label>
+<input type="text" name="Cedula">
+ </fieldset>
+ 
+<br>
+<!-- Button -->
+<button>Enviar</button>
+
+</form>

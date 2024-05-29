@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- link externo y con <! asi se comenta en HTML -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+    <div class="color1 bordes margenes padding ">
+        Elemento1
+        <i class="fa-solid fa-cloud"></i>
+    </div>
+
+    <div class="color2 bordes margenes padding ">
+        Elemento2
+        <i class="fa-solid fa-cloud"></i>
+    </div>
+
+    <div>
+        <h1 class="text-shadow">Titulo</h1>
+        <p class="alineacion-texto"></p>
+        <p class="alineacion-texto">La ingeniería de sistemas es un campo interdisciplinario de la ingeniería que permite estudiar y comprender la realidad, con el enfoque de implementar u optimizar sistemas complejos.</p>
+    </div>
+    <button>medico <i class="fa solid fa-user-doctor"></i></button>
+    <br>
+    <a href="https://talentotech.gov.co/portal/" class="enlace" target="_blank">talentotech</a>
+     <br>
+
+     <div>
+        <h1 class="titulo">Listas</h1>
+        
+      <ul>
+        <li>Huevos</li>
+        <li>Leche</li>
+        <li>Carne</li>
+        <li>Pescado</li>
+      </ul>
+     </div>
+
+     <div>
+        <h1 class="titulo">Tabla</h1>
+        <table id="estilo-tabla">
+            <tr>
+                <th>Nombre</th>
+                <th>Ciudad</th>
+                <th>Correo</th>
+
+            </tr>
+
+            <tr>
+                <td>Andres</td>
+                <td>Bogota</td>
+                <td>felipe1992libra@gmail.com</td>
+            </tr>
+
+                <tr>
+                    <td>Diana</td>
+                    <td>Manizales</td>
+                    <td>dianaalzate1@gmail.com</td>
+                </tr>
+
+                <tr>
+                    <td>Carolina</td>
+                    <td>Ibague</td>
+                    <td>caritocharry73@gmail.com</td>
+                </tr>
+        </table>
+     </div>
+
+     <div>
+        <h1>Posicionamiento</h1>
+        <div class="relative">
+         Relativo
+         <div class="absolute">
+            Absoluto
+            <div class="fixed">
+                Fijado
+                <p>
+                    La ingeniería de sistemas es un campo interdisciplinario de la ingeniería que permite estudiar y comprender la realidad, con el enfoque de implementar u optimizar sistemas complejos.
+                </p>
+            </div>
+           </div>
+        </div>
+        
+     </div>
+
+     <div>
+        <h1>Float</h1>
+        <div>
+            <p>La ingeniería de sistemas es un campo interdisciplinario de la ingeniería que permite estudiar y comprender la realidad, con el enfoque de implementar u optimizar sistemas complejos.
+                <img class="float" src="https://girardot.unipiloto.edu.co/wp-content/uploads/2015/10/prueba.jpg" width="100">
+            </p>  
+        </div>
+     </div>
+
+     <div>
+
+        <h1>Imagenes</h1>
+        <img class="imagen1" src="data:image/jpeg;base64,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">
+
+        <img class="imagen2" src="https://www.shutterstock.com/image-photo/software-developer-programmer-coding-program-260nw-2337802721.jpg">
+
+        <img class="imagen3" src="https://eluniversitario.ues.edu.sv/wp-content/uploads/sites/11/2021/05/rear-view-of-programmer-working-all-night-long.jpg">
+     </div>
+
+     <div class="transition">
+        <h1>Transiciones</h1>
+     </div>
+
+     <div class="animation">
+        <h1>Animaciones</h1>
+     </div>
+
+     <form action="">
+        <label for="">Nombre</label>
+        <input type="text" placeholder="Nombre">
+        <label for="">Descripcion</label>
+        <textarea name="" id=""></textarea>
+        <label for="">Pais</label>
+        <select name="" id="">
+            <option value="">Colombia</option>
+            <option value="">Australia</option>
+            <option value="">España</option>
+        </select>
+        <button>Enviar</button>
+     </form>
+
+     <h1>Grid</h1>
+     <div class="grid">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+     </div>
+
+</body>
+
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+
+<style>
+    .color1 {
+        background-color:tomato;
+        color:#C5D61D;
+        border:solid;
+        border-color:rgb(9, 42, 205);
+        opacity: 0.5;
+    }
+    
+    .color2 {
+        width: 1000px;
+        height: 300px;
+        background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ7YAuP3M6EMVjXmxFDSVJsIGFrWhjBvzad-Xu__xv0vNullpbUuMmgFmP2-lxxwdSNFSs&usqp=CAU");
+        background-repeat: no-repeat;
+        background-position: right top ;
+        background-attachment: scroll;
+        border-style: dotted solid dashed double;
+        border-color: aqua;
+        border-width: 10px;
+        border-radius: 100;
+    }
+
+    .bordes {
+        border-style: dotted solid dashed double;
+        border-color: #15e2c0;
+        border-width: 10px;
+        border-radius: 100;
+    }
+
+    .margenes {
+        margin-left: 50px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+    }
+
+    .padding {
+        padding-top: 50px;
+        padding-left: 30px;
+        padding-right: 50px;
+    }
+
+    .alineacion-texto {
+        text-align: center;
+        text-align-last: right;
+        /*direction:rtl;  /* asi que comenta en CSS */
+       /* unicode-bidi: bidi-override; */
+        text-decoration-line: underline;
+        text-decoration-color: blueviolet;
+        text-decoration-style:dotted;
+        text-decoration-thickness: 5px;
+
+        text-transform: capitalize;
+        text-indent: 50px;
+        letter-spacing: 2px;
+        line-height: 2;
+        word-spacing: 10px;
+
+    }
+
+    .text-shadow {
+        color: tomato;
+        text-shadow: 2px 2px 5px #e215;
+        font-family:"Audiowide", sans-serif;
+        font-style: oblique; 
+        font-size: 60px;
+    }
+ /*seudoclases */
+
+    .enlace {
+      text-decoration: none;
+      background-color: tomato;
+      padding: 5px;
+      border-radius: 5px;
+      border-color: chartreuse;
+      border-style: solid;
+      display: inline-block;
+      text-align: center;
+      cursor:pointer;
+    }
+
+    .enlace:hover{
+        color:#15e2c0;
+    }
+
+    .enlace:active{
+        color:#C5D61D;
+    }
+
+    ul>li {
+        list-style-type:lower-alpha;
+        background-color: chartreuse;
+        display: inline;
+        visibility: hidden;
+    }
+
+    ul {
+        background-color: tomato;
+        opacity: 0.6px;
+        padding: 20px;
+    }
+
+    table#estilo-tabla, th, tr {
+        border: 1px solid;
+        width: 70px;
+        text-align: center;
+        border-collapse: collapse;
+
+    }
+
+    th, td {
+        border: 1px solid;
+    }
+
+    table#estilo-tabla tr:nth-child(even){
+        background-color:#15e2c0;
+    }
+
+/*estilo a table dondole clic por encima */
+
+    table#estilo-tabla tr:hover {
+        background-color: chartreuse;
+        color: rgb(250, 215, 222);
+    }
+
+    table#estilo-tabla th {
+        background-color: aquamarine;
+        color: rgb(12, 12, 12)
+    }
+     
+    .titulo{
+        color: #15e2c0;
+    }
+
+    .titulo {
+        color: #15e2c0;
+    }
+
+    /*se adpata a la posicion del padre */
+    .relative {
+        border: 3px solid #15e2c0;
+        width: 400px;
+        height: 200px;
+        position: relative; 
+
+        /*alineacion */
+
+        text-align: right;
+        vertical-align: bottom;
+    }
+
+    /*mantiene su posicion fija */
+    .absolute {
+        border: 3px solid #C5D61D;
+        width: 200px;
+        height: 100px;
+        right: 0;
+        top: 80px;
+        position: absolute;
+    }
+
+    .fixed {
+        border: 3px solid #e215;
+        width: 100px;
+        height: 50px;
+        left: 0;
+        top: 200px;
+        position: fixed;
+        background-color: chartreuse;
+
+        /*desbordado */
+        overflow:auto;
+    }
+
+    .float {
+        width: 100px;
+        height: 150px;
+        float: left;
+    }
+
+    /*seudoelementos */
+
+    h1::first-letter {
+        color: brown;
+        background-color: #15e2c0;
+        font-size: 50px;
+    }
+
+    .imagen1 {
+        width: 400px;
+        border-radius: 50px;
+        border: 10px solid rgb(11, 231, 220);
+        padding: 10px;
+        outline-color: chartreuse;
+        outline-style: solid;
+        
+    }
+
+    .imagen2 {
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 10px;
+        box-shadow: 5px 1px 20px chartreuse;
+    }
+
+    .imagen3 {
+        width: 500px;
+        display: block;
+        margin-top: 50px;
+
+        filter:blur(4px); /*difuminar */
+        filter:brightness(250%); /*brillo */
+        filter:contrast(180%); /*contraste*/
+        filter:grayscale(80%); /*escala*/
+        filter: hue-rotate(180deg); /* Escala de Grises*/
+        filter: invert(60%); /* Inversion de colores*/
+        filter: saturate(5); /* Saturacion */
+        filter: sepia(50%); /* Sepia */
+        filter: opacity(50%); /* Opacidad */
+
+    }
+
+    .imagen3:hover {
+        width: 70%;
+        transition: width 2s; height: 4s;
+    }
+
+    .transition {
+        background-color: #15e2c0;
+        width: 20px;
+        height: 100px;
+        transition: width 2s, transform 2s;
+        transition-timing-function: linear;
+        transition-timing-function: ease;
+        transition-timing-function: ease-in;
+        transition-timing-function: ease-out;
+        transition-delay: 1s;
+
+    }
+
+    .transition:hover   {
+        width: 30%;
+        transform: rotate(90deg);
+        transform: translate(120px, 50%);
+        transform: scale(0.5) translate(-100%, -100%); 
+    }
+
+    .animation {
+        width: 25%;
+        height: 100px;
+        background-color: blueviolet;
+        position: relative;
+        animation-name: ejemplo;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+    }
+
+    @keyframes ejemplo{
+        0% {border-radius: 5px; background-color: brown; left: 0; top: 0}
+        25% {border-radius: 20px; background-color:#C5D61D; left: 200px; top: 0}
+        50% {border-radius: 50px; background-color:chartreuse; left: 200px; top: 200px}
+        75% {border-radius: 20px; background-color:darkgreen; left: 0; top: 200px}
+        100% {border-radius: 5px; background-color: brown; left: 0; top: 0}
+    }
+
+    /*estilos del formulario */
+
+    input, textarea, select {
+        width: 100%;
+        padding: 15px 20px;
+        margin: 8px;
+        display: inline-block;
+        border: 1px solid #15e2c0;
+        border-radius: 5px;
+        box-sizing: border-box;
+
+    }
+
+    button {
+        border-radius: 5px;
+        color: antiquewhite;
+        background-color: chocolate;
+        padding: 10px 20px;
+        width: 100%;
+        margin: 8px;
+        border: none;
+        cursor: pointer;
+
+    }
+
+    button:hover {
+        background-color: chartreuse;
+
+    }
+
+    label {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 5px;
+        font-weight: bold;
+    }
+
+    /*cuadricula */
+
+    .grid{
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        gap: 10px;
+        background-color: aquamarine;
+        padding: 10px;
+    }
+
+    .grid > div {
+        background-color: chartreuse;
+        text-align: center;
+        padding: 20px;
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 600px) {
+     button {
+        width: 200px;
+        background-color: darkcyan;
+     }
+    }
+        
+    @media screen and (max-width: 600px) {
+     button {
+        width: 50%;
+        background-color: coral;
+     }
+    }
+
+</style>
+</html>

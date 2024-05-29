@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+
+<script>
+    // var nota = parseFloat(prompt("Ingrese la nota"))
+    // if(nota >= 3) {
+    //     document.write("Aprobado")
+    // }
+
+    // else {
+    //     document.write("Reprobado")
+    // }
+
+     //Ejercicio...
+
+    //ingresar una temperatura, si es mayor que 20 imprimir "Esta haciendo calor"
+    //sino imprimir "Esta haciendo frio"
+
+    // var temperatura = parseFloat(prompt("Ingrese la temperatura"))
+    // if(temperatura > 20) {
+    //     document.write("Esta haciendo calor")
+    // }
+
+    // else if (temperatura == 18) {
+    //     document.write ("El clima esta perfecto")
+    // }
+
+    // else {
+    //     document.write("Esta haciendo frio")
+    // }
+
+    // ingresando una estacion, imprimir si es tiempo de sembrar, teniendo en cuenta que solo se puede sembrar
+    //en verano u otono, de lo contrario imprimir "No es tiempo de sembrar"
+
+    // var estacion = parseFloat(prompt("Ingresar estacion"))
+    // if (estacion == "verano" || estacion == "otono") {
+    //     mensaje = "Es buen tiempo de sembrar"
+    // } 
+    
+    // else {
+    //     mensaje = ("No es tiempo de sembrar") 
+    // } 
+    
+
+    //implementar un algoritmo que reciba dos numeros y una operacion,
+    //validar por el nombre de la operacion cual se debe realizar y mostrar en pantalla el resultado final
+
+    // var num1 = parseFloat(prompt("Ingrese el numero 1: "))
+    // var num1 = parseFloat(prompt("Ingrese el numero 2: "))
+    // var operacion = prompt("Ingresar la operacion a realizar")
+
+    // if (operacion == "suma")    
+    //  {resultado = num1+num2}
+    // else if (operacion == "resta"){
+    // resultado = num1 + num2}
+    // else if(operacion== "multiplicacion")
+    // { resultado = num1 + num2}
+    // else if(operacion== "division")
+    // { resultado = num1 + num2}
+
+    // else {documente.write("La operacion no existe")}
+    // //potenciacion y resultado
+    // document.write("El resultado de la" + operacion + "es: " + resultado)
+
+
+    //implementar un algoritmo qu reciba una nota,
+    //si la nota es menor a 3 imprimir "I"
+    //si la nota es mayor o igual a 3 y menor que 4 imprimir "A"
+    //si la nota es mayor o igual a 4 y menor que 4 imprimir "S"
+    //si la nota es igual a 5 imprimir "E"
+    //tener en cuenta que solo se pueden ingresar notas entre o y 5
+
+    var nota= parseFloat(prompt("Ingresar la nota:" ))
+    var letra = ""
+    if(nota > 0 && nota <3){
+        letra = "I"
+    }
+
+    else if(nota >=3 && nota <4){
+        letra = "A"
+    }    
+
+    else if(nota >=3 && nota <5){
+        letra = "S" 
+    }
+
+    else if(nota == 5){
+        letra = "E"
+     }
+
+    document.write("La nota no es valida")
+
+    if(letra != ""){
+        document.write("La letra asociada a la nota es:" + letra)
+    }
+
+
+
+</script>
+
+</html>
