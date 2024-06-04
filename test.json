@@ -1,0 +1,99 @@
+[
+
+    {
+        "nombre": "Leonel",
+        "apellidos": "Messi",
+        "edad": 36,
+        "mascota": [
+                {
+                    "nombre": "Firulais",
+                    "tipo": "Perro"
+                },
+    
+                {
+                    "nombre": "Pepe",
+                    "tipo": "Loro"
+                }
+        ]
+    
+    
+    },
+    
+    {
+        "nombre": "Andres",
+        "apellidos": "Charry",
+        "edad": 31,
+        "mascota": [
+                {
+                    "nombre": "LupeMaria",
+                    "tipo": "Gata"
+                },
+    
+                {
+                    "nombre": "Rufo",
+                    "tipo": "Perro"
+                }
+        ]
+    
+    
+    },
+    
+    {
+        "nombre": "Carolina",
+        "apellidos": "Gonzalez",
+        "edad": 36,
+        "mascota": [
+                {
+                    "nombre": "Lucy",
+                    "tipo": "Perra"
+                },
+    
+                {
+                    "nombre": "Anastasia",
+                    "tipo": "Gata"
+                }
+        ]
+    
+    
+    },
+    
+    {
+        "nombre": "Mery",
+        "apellidos": "Gonzalez",
+        "edad": 36,
+        "mascota": [
+                {
+                    "nombre": "Sacha",
+                    "tipo": "Perra"
+                },
+    
+                {
+                    "nombre": "Luna",
+                    "tipo": "Perra"
+                }
+        ]
+    
+    
+    },
+    
+    {
+        "nombre": "Rocio",
+        "apellidos": "Vargas",
+        "edad": 36,
+        "mascota": [
+                {
+                    "nombre": "Simba",
+                    "tipo": "perro"
+                },
+    
+                {
+                    "nombre": "Luis",
+                    "tipo": "Gato"
+                }
+        ]
+    
+    
+    }
+    
+    
+    ]
